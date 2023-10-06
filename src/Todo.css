@@ -1,0 +1,81 @@
+.Todo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 1.1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 2px rgb(127, 127, 127);
+    border: #c9c9c9 1px solid;
+    border-radius: 5px; 
+  }
+
+.Todo .Time {
+  display:flex;
+  width:100%;
+  justify-content: left;
+  color: #807d7d;
+  font-size: 12px;
+}
+
+.Todo .Task {
+  display: flex;
+  width:100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.Todo-task {
+  position: relative;
+  transition: opacity 0.4s linear;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+.Todo-task.completed {
+  opacity: 0.6;
+  -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
+.Todo-task.completed:before{
+  content: "☑ ";
+  /*how to change opacity: 1 for checkbox */
+}
+
+.Todo-buttons {
+  flex-shrink: 0;
+  padding-left: 0.7em;
+}
+  
+.Todo-edit-form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  width:100%;
+}
+
+.Todo-edit-form input {
+  width:100%;
+  margin-right: 5px;
+  border-radius: 5px;
+  border:solid 1px gray;
+}
+
+  
+.edit {
+  padding:0;
+  height:30px;
+  width:30px;
+  border:none;
+  background-color: white;
+  color:black;
+}
+
+.edit:hover {
+  background-color: #cbcbcb;
+}

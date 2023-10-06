@@ -1,0 +1,43 @@
+.button {
+  padding: 5px;
+  border:none;
+  font-size: 14px;
+  background: #7300ff;
+  color: white;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: #7c50eb;
+}
+
+.button-close {
+  background: white;
+  padding:5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px rgb(176, 176, 176) solid;
+  color: rgb(176, 176, 176);
+}
+
+.button-close:hover {
+  background-color: rgb(176, 176, 176);
+  color:white;
+}
+  
+.form-box {
+  display:flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  border-radius: 5px;
+  background: white;
+}
+
+.bg-form {
+  width:100vw;
+  height:100vh;
+  background: rgba(65, 65, 65, 0.448);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
